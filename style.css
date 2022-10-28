@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 
 /******************
     RESET
@@ -93,7 +93,7 @@ button {
   padding: 25px;
 
   display: grid;
-  grid-template-rows: 1fr 4fr 6fr; 
+  grid-template-rows: 90px 300px 140px; 
   color: white;
 }
 
@@ -155,19 +155,113 @@ main {
 }
 
 .projects-header {
-  padding: 20px;
+  padding: 30px 0 0 20px;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .projects-container {
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
 }
 
+.card {
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 1px rgb(185, 185, 185);
+  padding: 30px 20px 30px;
+  background-color: white;
+}
+
+.project {
+  background: linear-gradient(90deg, rgb(231, 182, 74), rgb(231, 182, 74) 7px, #fff 7px, #fff 40px);
+  display: grid;
+  grid-template-rows: 1fr 90px 1fr;
+}
+
+.card h4 {
+  font-weight: 700;
+}
+
+.card > p {
+  font-weight: 300;
+  font-size: .9rem;
+  color: rgb(100, 100, 100);
+}
+
+.card-buttons {
+  display: grid;
+  grid-template-columns: 1fr 50px 50px;
+  justify-items: end;
+}
+
+.card-buttons button {
+  border: none;
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.star {
+  background-image: url(./images/star-plus-outline.svg);
+}
+
+.eye {
+  background-image: url(./images/eye-plus-outline.svg);
+}
+
+.fork {
+  background-image: url(./images/source-fork.svg);
+}
+
+.right-sidebar {
+  display: grid;
+  grid-template-rows: 40px 300px 20px 300px;
+  grid-gap: 20px;
+  padding: 0 20px 20px 0;
+}
+
+.announcements-header {
+  padding: 30px 0 0 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
 
 .announcements { 
   grid-column: -1 / -2;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.announcements { 
+  padding: 10px 20px 20px;
+}
+
+.announcement:not(:last-child) {
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.announcement > h5 {
+  font-size: .8rem;
+  font-weight: 800;
+  padding: 20px 5px 5px;
+}
+
+
+
+.announcement > p {
+  font-size: .7rem;
+  font-weight: 300;
+  padding: 5px 5px;
+  line-height: .8rem;
+}
+
+.trending-header {
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .trending {
